@@ -6,8 +6,6 @@ body {
 	text-align: center;
 	font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
 	font-size: 16px;
-
-	/* display: flex; */
 	align-items: center;
 	justify-content: center;
 }
@@ -17,16 +15,6 @@ hr {
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 }
-
-/* 
-bg color: #121213
-yellow: #b59f3b
-gray: #3a3a3c
-
-62x62 (4px in between?)
-green: #538d4e
-white: #ffffff
-*/
 
 .wordle {
 	display: flex;
