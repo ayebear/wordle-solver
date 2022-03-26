@@ -15,7 +15,7 @@ function answer(date) {
 }
 
 // Render dates and words
-function render(id, date) {
+function render(id, date, today) {
 	const root = document.getElementById(id)
 	// Render date
 	const [dateElem] = root.getElementsByClassName('date')
@@ -23,12 +23,13 @@ function render(id, date) {
 	// Render word
 	const word = answer(date)
 	const letters = root.getElementsByClassName('letter')
+	const letterClass = today ? ' green' : ' darkgreen'
 	for (let i = 0; i < 5; ++i) {
 		const letter = letters[i]
 		const c = word[i].toUpperCase()
 		setTimeout(() => {
 			letter.innerHTML = c
-			letter.className += ' green'
+			letter.className += letterClass
 		}, Math.random() * computeTime)
 	}
 }
@@ -40,5 +41,5 @@ const tomorrow = new Date()
 yesterday.setDate(today.getDate() - 1)
 tomorrow.setDate(today.getDate() + 1)
 render('yesterday', yesterday)
-render('today', today)
+render('today', today, true)
 render('tomorrow', tomorrow)

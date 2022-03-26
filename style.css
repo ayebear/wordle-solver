@@ -32,12 +32,15 @@ hr {
 	height: 62px;
 	line-height: 62px;
 	background-color: #3a3a3c;
-	color: white;
 	margin: 3px;
 }
 
 .green {
 	background-color: #538d4e;
+}
+
+.darkgreen {
+	background-color: #2a4727;
 }
 
 .today {
