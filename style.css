@@ -43,3 +43,29 @@ hr {
 .today {
 	color: white;
 }
+
+/* Social media icons css */
+.smicon {
+	padding: 16px 16px;
+	fill: #aaa;
+	width: 64px;
+	height: 64px;
+	margin-top: 4rem;
+}
+
+.smlink {
+	outline: none;
+	border: 0;
+	text-decoration: none;
+}
+
+.smlink svg #down {
+	transition: 100ms;
+	transition-timing-function: ease-in-out;
+	-webkit-transition: 100ms;
+	-webkit-transition-timing-function: ease-in-out;
+}
+
+.smlink svg:hover #down {
+	fill: #fff;
+}
